@@ -39,7 +39,8 @@ public class Transformacion {
 
     //El flatMap me pide que retorne otro flujo de datos, no el dato como tal. Esto se utiliza
     //por ejemplo cuando en llamados a bases de datos, lo que yo estoy obteniendo son flujos de
-    //la información encontrada
+    //la información encontrada, entonces tendía un flujo de flujos, por lo que requiero aplanarlo
+    //para poder devolver un flujo de datos
     public void flatMap(){
         List<Persona> personas = new ArrayList<>();
         personas.add(new Persona(1,"Sebastian", 28));
