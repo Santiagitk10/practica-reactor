@@ -15,7 +15,8 @@ public class Transformacion {
 
     //Map me sirve para hacer operaciones a los elementos del flujo, devolviendo un nuevo flujo
     //En este caso como el flujo es de elementos de la clase persona si se ve el resultado reflejado
-    //luego de haber aumentado la edad con los setter
+    //luego de haber aumentado la edad con los setter. Es decir me desempaqueta el dato para 
+    //manipularlo, y luego me lo vuelve a empaquetar en un flujo
     public void map(){
         List<Persona> personas = new ArrayList<>();
         personas.add(new Persona(1,"Sebastian", 28));
